@@ -58,6 +58,7 @@ export default function App() {
       setObstaclesNegHeight( - Math.random() * 100)
       setScore(score => score + 1)
     }
+    
   }, [obstaclesLeft])
 
   //start second obstacles
@@ -71,6 +72,7 @@ export default function App() {
     } else {
       setObstaclesLeftTwo(screenWidth)
       setObstaclesNegHeightTwo( - Math.random() * 100)
+      setScore(score => score + 1)
     }
   }, [obstaclesLeftTwo])
 
